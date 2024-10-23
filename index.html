@@ -10,19 +10,28 @@
     <script src="script.js" defer></script>
   </head>
   <body>
+
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <p class="title">Primary hero</p>
+        <p class="subtitle">Primary subtitle</p>
+      </div>
+    </section>
+  
     <div class="container content has-text-centered">
       <section class="section">
         <h1 class="title">Welcome to E-Foods</h1>
         <p>Click an item to add it to your cart.</p>
         <div id="button-group" class="columns">
           <div class="column">
-            <button class="button" id="apple">🍎 Apple: $0.75</button>
+            <button class="button is-danger is-light" id="apple" >🍎 Apple: $0.75</button>
+          
           </div>
           <div class="column">
-            <button class="button" id="banana">🍌 Banana: $0.30</button>
+            <button class="button is-info is-light"id="banana">🍌 Banana: $0.30</button>
           </div>
           <div class="column">
-            <div class="button" id="mango">🥭 Mango: $1.25</div>
+            <button class="button is-warning is-light" id="mango">🥭 Mango: $1.25</button>
           </div>
         </div>
         <div id="single-button">
@@ -38,5 +47,33 @@
         <h4>Your total: $<span id="total-span">0</span></h4>
       </section>
     </div>
+
+    <form class="box">
+      <div class="field">
+        <label class="label">Email</label>
+        <div class="control">
+          <input class="input" type="email" placeholder="e.g. alex@example.com" />
+        </div>
+      </div>
+    
+      <div class="field">
+        <label class="label">Password</label>
+        <div class="control">
+          <input class="input" type="password" placeholder="********" />
+        </div>
+      </div>
+    
+      <button class="button is-primary">Sign in</button>
+    </form>
+
+    <div class="notification is-info is-light">
+      <button class="delete"></button>
+      Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum
+      dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
+      nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus
+      diam, et dictum <a>felis venenatis</a> efficitur.
+    </div>
+
+
   </body>
 </html>
